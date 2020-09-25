@@ -1,5 +1,7 @@
-const mongoose = require('mongoose');
+//Database Model i.e Mongo database Schema
+const mongoose = require('mongoose'); //Importing Mongoose library
 
+//Defining new Schema -- User
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -23,4 +25,5 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
+//Exporting Schema Model as User
 module.exports = User = mongoose.model('user', UserSchema);

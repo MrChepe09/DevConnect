@@ -1,9 +1,11 @@
-const mongoose = require('mongoose');
-const config = require('config');
-const db = config.get('mongoURI');
+const mongoose = require('mongoose'); //mongoose library
+const config = require('config'); //Constants in default.json in config folder
+const db = config.get('mongoURI'); //Database URI in config constants
 
+//Instead of Promises we will be using *Async-Await*
 const connectDB = async () => {
   try {
+    //Trying to connect to the database URI
     await mongoose.connect(db, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -17,4 +19,5 @@ const connectDB = async () => {
   }
 };
 
+//Exporting the connection function which is then called in Server.js File
 module.exports = connectDB;

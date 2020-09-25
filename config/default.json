@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://bhupinder:mpzharsh1001@devconnect.cayak.mongodb.net/devconnect?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://bhupinder:mpzharsh1001@devconnect.cayak.mongodb.net/devconnect?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
 }
