@@ -1,5 +1,6 @@
 const mongoose = require('mongoose'); //mongoose library
 const config = require('config'); //Constants in default.json in config folder
+
 const db = config.get('mongoURI'); //Database URI in config constants
 
 //Instead of Promises we will be using *Async-Await*
